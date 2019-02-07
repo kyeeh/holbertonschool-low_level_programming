@@ -7,4 +7,6 @@
 **Task#04** - Print alphabet in lowercase and uppercase.
 **Task#05** - Print numbers.
 **Task#06** - Print numbers as characters.
-**Task#06** - 
+**Task#07** - Print reverse alphabet.
+**Task#08** - Print hexadecimal digits.
+**Task#09** - 
