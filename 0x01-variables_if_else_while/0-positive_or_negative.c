@@ -1,6 +1,7 @@
-#include <stdio.h>
 #include <stdlib.h>
-
+#include <time.h>
+/* more headers goes there */
+#include <stdio.h>
 /**
  * main - Entry point
  *
@@ -8,27 +9,21 @@
  */
 int main(void)
 {
-	/* Intializes random number generator */
-	time_t t;
-	int i;
-	short bin;
+	int n;
 
-	srand((unsigned int) time(&t));
-	i = rand();
-	bin = rand() % 2;
-	printf("Binary: %i\n", bin);
-	if (i == 0)
+	srand(time(0));
+	n = rand() - RAND_MAX / 2;
+	/* your code goes there */
+	if (n == 0)
 	{
-		printf("%i is zero\n", i);
+		printf("%i is zero\n", n);
 	}
 	else
 	{
-		if (bin == 0)
-			i = i * -1;
+		if (n > 0)
+			printf("%i is positive\n", n);
+		else
+			printf("%i is negative\n", n);
 	}
-	if (i > 0)
-		printf("%i is positive\n", i);
-	else
-		printf("%i is negative\n", i);
 	return (0);
 }
