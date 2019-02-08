@@ -31,18 +31,19 @@ int main(void)
 						putchar(' ');
 						putchar(p + '0');
 						putchar(q + '0');
+						if (!((a == 98) && (b == 99)))
+						{
+							putchar(',');
+							putchar(' ');
+						}
+						else
+							putchar('\n');						
 					}
-					if (!((a == 98) && (b == 99)))
-					{
-						putchar(',');
-						putchar(' ');
-					}
-					else
-						putchar('\n');
 				}
 			}
 		}
 	}
 	return (0);
 }
+
 
