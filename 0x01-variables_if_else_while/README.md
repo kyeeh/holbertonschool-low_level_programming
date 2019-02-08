@@ -24,4 +24,8 @@
 
 **Task#11** - Print minimal combinations with two digits.
 
+**Task#12** - Print minimal combinations with three digits.
 
+**Task#13** - Print minimal combinations with two digits.
+
+**Task#14** - Print minimal combinations with two digits and two sets.
