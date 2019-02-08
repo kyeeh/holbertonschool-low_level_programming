@@ -17,7 +17,6 @@ int main(void)
 	{
 		for (j = 0; j <= 9; ++j)
 		{
-			putchar(' ');
 			a = (i * 10) + j;
 			for (p = 0; p <= 9; ++p)
 			{
