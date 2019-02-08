@@ -1,6 +1,3 @@
-#include <stdlib.h>
-#include <time.h>
-/* more headers goes there */
 #include <stdio.h>
 /**
  * main - Entry point
@@ -30,11 +27,14 @@ int main(void)
 						putchar(' ');
 						putchar(p + '0');
 						putchar(q + '0');
-						putchar(',');
-						putchar(' ');
 					}
 					if ((a == 98) && (b == 99))
 						putchar('\n');
+					else if (b > a)
+					{
+						putchar(',');
+						putchar(' ');
+					}
 				}
 			}
 		}
