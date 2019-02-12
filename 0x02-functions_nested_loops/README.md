@@ -8,4 +8,10 @@
 
 **Task#03:** Check for lower case character.
 
-**Task#04:** 
+**Task#04:** Check for alphabetic caracter.
+
+**Task#05:** Print the sign of a number.
+
+**Task#06:** Print the absolute value of a number.
+
+**Task#07:** 
