@@ -7,7 +7,7 @@
  */
 int main(void)
 {
-	char hb[] = "Holberton\n";
+	char hb[] = "Holberton";
 	int i;
 
 	for (i = 0; i <= 10 ; i++)
