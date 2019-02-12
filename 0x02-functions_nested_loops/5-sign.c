@@ -1,7 +1,7 @@
 #include "holberton.h"
 
 /**
- * print_sign(int n) - sign checker
+ * print_sign - sign checker for n
  * @n: the integer to be checked
  *
  * Return: 1 if it greater than zero.
