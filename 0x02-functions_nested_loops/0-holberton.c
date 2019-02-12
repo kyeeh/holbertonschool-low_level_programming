@@ -1,5 +1,4 @@
 /* more headers goes there */
-#include <stdio.h>
 #include "holberton.h"
 /**
  * main - Entry point
@@ -8,7 +7,7 @@
  */
 int main(void)
 {
-	char hb[] = "Holberton\n";	
+	char hb[] = "Holberton\n";
 	int i;
 
 	for (i = 0; i <= 10 ; i++)
