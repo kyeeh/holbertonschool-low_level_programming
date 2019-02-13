@@ -14,4 +14,8 @@
 
 **Task#06:** Print the absolute value of a number.
 
-**Task#07:** 
+**Task#07:** Print the last digit of a number.
+
+**Task#08:** Print every minute of a day.
+
+ 
