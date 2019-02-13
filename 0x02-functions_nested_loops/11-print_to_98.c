@@ -2,6 +2,7 @@
 #include <stdio.h>
 /**
  * print_to_98 - print natural numbers until 98.
+ * @n: starting point for natural serie.
  */
 void print_to_98(int n)
 {
