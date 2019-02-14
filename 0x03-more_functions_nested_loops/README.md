@@ -14,4 +14,8 @@
 
 **Task#06:** Print lines with n '\_'.
 
-**Task#07:** 
+**Task#07:** Print diagonal with n '\\'.
+
+**Task#08:** Print n squares.
+
+**Task#09:** 
