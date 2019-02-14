@@ -18,4 +18,6 @@
 
 **Task#08:** Print n squares.
 
-**Task#09:** 
+**Task#09:** Print numbers from 0 to 100 with fizz and buzz.
+
+**Task#10:** 
