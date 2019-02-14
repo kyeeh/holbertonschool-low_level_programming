@@ -4,4 +4,12 @@
 
 **Task#01:** Checks for a digit.
 
-**Task#02:** 
+**Task#02:** Mutiplies two integers.
+
+**Task#03:** Print numbers from 0 to 9.
+
+**Task#04:** Print Most Numbers.
+
+**Task#05:** Prints 10 times the numbers.
+
+**Task#06:** 
