@@ -12,4 +12,6 @@
 
 **Task#05:** Prints 10 times the numbers.
 
-**Task#06:** 
+**Task#06:** Print lines with n '\_'.
+
+**Task#07:** 
