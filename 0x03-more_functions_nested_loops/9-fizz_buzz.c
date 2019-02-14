@@ -9,13 +9,13 @@ int main(void)
 {
 	int i, f, b;
 
-	for (i = 1; i <= 100; i++)
+	for (i = 1; i <= 98; i++)
 	{
 		f = i % 3;
 		b = i % 5;
 		(f == 0 && b == 0) ? printf("FizzBuzz ") : f == 0 ?
 			printf("Fizz ") : b == 0 ? printf("Buzz ") : printf("%i ", i);
 	}
-	printf("\n");
+	printf("Fizz Buzz\n");
 	return (0);
 }
