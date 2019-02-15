@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
- * main - check the code for Holberton School students.
+ * main - Prin series from 1..100 with Fizz Buzz for i % 3 and i % 5.
  *
  * Return: Always 0.
  */
