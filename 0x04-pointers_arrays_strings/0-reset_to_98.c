@@ -1,8 +1,8 @@
 #include "holberton.h"
 
 /**
- * print_numbers - Print one digit numbers
- *
+ * reset_to_98 - Change pointer value.
+ * @n: pointer.
  */
 void reset_to_98(int *n)
 {
