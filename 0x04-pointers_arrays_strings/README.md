@@ -10,4 +10,6 @@
 
 **Task #04** - Prints a String in reverse.
 
-**Task #05** - 
+**Task #05** - Reverses a String.
+
+**Task #06** - 
