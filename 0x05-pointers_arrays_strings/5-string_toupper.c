@@ -2,7 +2,7 @@
 
 /**
  * string_toupper - uppercase a string
- * @c: the integer to be checked
+ * @s: the string to be checked
  *
  * Return: a uppercase string pointer.
  */
