@@ -13,7 +13,7 @@ int isSeparator(char c)
 				'\'', '(', ')', '{', '}' };
 	int i;
 
-	for (i = 0; i < 12; i++)
+	for (i = 0; i < 13; i++)
 	{
 		if (separators[i] == c)
 			return (1);
@@ -31,6 +31,7 @@ char *cap_string(char *s)
 {
 	int i;
 
+	((s[0] >= 97) && (s[0] <= 122)) ? s[0] -= 32 : 0;
 	for (i = 1; s[i] != '\0'; i++)
 		(isSeparator(s[i - 1]) && ((s[i] >= 97) && (s[i] <= 122))) ? s[i] -= 32 : 0;
 	return (s);
