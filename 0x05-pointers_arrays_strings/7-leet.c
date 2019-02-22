@@ -7,7 +7,7 @@
  */
 char *leet(char *s)
 {
-	int i,j;
+	int i, j;
 
 	char c1encoder[] = {'t', 'a', 'e', 'l', 'o'};
 	char c2encoder[] = {'T', 'A', 'E', 'L', 'O'};
