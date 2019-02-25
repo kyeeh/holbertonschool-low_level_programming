@@ -42,6 +42,6 @@ int main(void)
 	simple_print_buffer(buffer, 98);
 	_memcpy(buffer + 50, buffer2, 10);
 	printf("-------------------------------------------------\n");
-	simple_print_buffer(buffer, 98);	
+	simple_print_buffer(buffer, 98);
 	return (0);
 }
