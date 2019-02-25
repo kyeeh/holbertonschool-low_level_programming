@@ -4,7 +4,6 @@
  * _strchr - locates a char in a string
  * @s: the string to check
  * @c: char to find
- * @n: first n bytes to copy memory.
  *
  * Return: pointer to the first char ocurrency.
  */
