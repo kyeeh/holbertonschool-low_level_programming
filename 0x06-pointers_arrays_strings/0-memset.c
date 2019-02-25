@@ -5,7 +5,7 @@
  * @b: constant byte.
  * @n: first n bytes to fill memory.
  * 
- * Return: a encoded string pointer.
+ * Return: a string pointer.
  */
 char *_memset(char *s, char b, unsigned int n)
 {
