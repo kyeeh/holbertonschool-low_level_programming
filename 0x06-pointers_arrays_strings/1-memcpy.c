@@ -4,7 +4,7 @@
  * @src: the source string
  * @dest: the destiny string
  * @n: first n bytes to copy memory.
- * 
+ *
  * Return: a encoded string pointer.
  */
 
