@@ -10,9 +10,9 @@ char *_strstr(char *haystack, char *needle)
 {
 	while (*haystack != '\0')
 	{
-
 		char *substr = needle;
 		char *base_address = haystack;
+
 		while (*haystack != '\0' && *substr != '\0' && *substr == *haystack)
 		{
 			substr++;
