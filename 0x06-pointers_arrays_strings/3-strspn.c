@@ -1,22 +1,27 @@
 #include "holberton.h"
+#include <stdio.h>
 /**
- * _strchr - locates a char in a string
+ * _strspn - locates a char in a string
  * @s: the string to check
- * @c: char to find
- * @n: first n bytes to copy memory.
- * 
- * Return: pointer to the first char ocurrency.
+ * @accept: prefix to find
+ *
+ * Return: integer with match amount.
  */
-
-char *_strchr(char *s, char c)
+unsigned int _strspn(char *s, char *accept)
 {
-	unsigned int i = 0;
-
-	while (s[i] != '\0')
+	unsigned int i, j, n;
+	
+	n = 0;
+	for (i = 0; s[i] != '\0'; i++)
 	{
-		if (s[i] == c)
+		for (j = 0; accept[j] != '\0'; j++)
+		{
+			if (s[i] == accept[j])
+				n++;
+			printf("N=%i, S: %c, A: %c, I: %i, J: %i\n", n, s[i], accept[j], i, j);
+		}
+		if (i == n)
 			break;
-		i++;
 	}
-	return (&s[i]);
+	return (i);
 }
