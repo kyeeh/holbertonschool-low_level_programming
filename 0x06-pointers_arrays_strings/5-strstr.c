@@ -10,16 +10,17 @@ char *_strstr(char *haystack, char *needle)
 {
 	while (*haystack != '\0')
 	{
+
 		char *substr = needle;
-		char *base_dadress = haystack;
+		char *base_address = haystack;
 		while (*haystack != '\0' && *substr != '\0' && *substr == *haystack)
 		{
 			substr++;
 			haystack++;
 		}
 		if (*substr == '\0')
-			return (base_dadress);
-		haystack = base_dadress + 1;
+			return (base_address);
+		haystack = base_address + 1;
 	}
 	return (0);
 }
