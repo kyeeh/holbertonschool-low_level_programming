@@ -1,0 +1,9 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "command": "clang++",
+    "isShellCommand": true,
+    "args": ["2-main.c", "-Wall", "-pedantic", "-Werror", "-Wextra", "2-main.c", "2-strchr.c"],
+    "showOutput": "always"
+}

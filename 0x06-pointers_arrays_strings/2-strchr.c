@@ -1,5 +1,4 @@
 #include "holberton.h"
-#include <stdio.h>
 /**
  * _strchr - locates a char in a string
  * @s: the string to check
@@ -7,7 +6,6 @@
  *
  * Return: pointer to the first char ocurrency.
  */
-
 char *_strchr(char *s, char c)
 {
 	unsigned int i = 0;
@@ -20,5 +18,5 @@ char *_strchr(char *s, char c)
 			return (&s[i]);
 		i++;
 	}
-	return (NULL);
+	return (&s[i]);
 }
