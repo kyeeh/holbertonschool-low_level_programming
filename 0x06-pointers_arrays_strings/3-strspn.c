@@ -1,5 +1,4 @@
 #include "holberton.h"
-#include <stdio.h>
 /**
  * _strspn - locates a char in a string
  * @s: the string to check
@@ -15,11 +14,8 @@ unsigned int _strspn(char *s, char *accept)
 	for (i = 0; s[i] != '\0'; i++)
 	{
 		for (j = 0; accept[j] != '\0'; j++)
-		{
 			if (s[i] == accept[j])
 				n++;
-			/*printf("N=%i, S: %c, A: %c, I: %i, J: %i\n", n, s[i], accept[j], i, j);*/
-		}
 		if (i == n)
 			break;
 	}
