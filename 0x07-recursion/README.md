@@ -12,4 +12,6 @@
 
 **Task #05** - Calculates the square root of a number.
 
-**Task #06** - 
+**Task #06** - Checks if a number is prime.
+
+**Task #07** - 
