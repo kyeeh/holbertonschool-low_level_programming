@@ -8,8 +8,8 @@
 
 **Task #03** - Calculates factorial of n.
 
-**Task #04** - Prints a String in reverse.
+**Task #04** - Calculates the Pow of a number.
 
-**Task #05** - Reverses a String.
+**Task #05** - Calculates the square root of a number.
 
 **Task #06** - 
