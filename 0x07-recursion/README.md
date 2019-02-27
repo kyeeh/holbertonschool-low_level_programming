@@ -2,7 +2,7 @@
 
 **Task #00** - Prints a string, followed by a new line.
 
-**Task #01** - Copy memory section.
+**Task #01** - Prints a string in reverse, followed by a new line.
 
 **Task #02** - Locates a character in a string.
 
