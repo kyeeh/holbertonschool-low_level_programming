@@ -4,9 +4,9 @@
 
 **Task #01** - Prints a string in reverse, followed by a new line.
 
-**Task #02** - Locates a character in a string.
+**Task #02** - Calculates the length of a string.
 
-**Task #03** - Prints the length of a prefix String.
+**Task #03** - Calculates factorial of n.
 
 **Task #04** - Prints a String in reverse.
 

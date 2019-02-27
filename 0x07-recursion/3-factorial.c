@@ -1,8 +1,8 @@
 #include "holberton.h"
 /**
- * _strlen_recursion - Prints the length of a string.
- * @s: the string to be printed
- * Return: the length of string
+ * factorial - Calculates factorial number.
+ * @n: number to calculate factorial.
+ * Return: facorial number
  */
 int factorial(int n)
 {
