@@ -29,7 +29,7 @@ int pal_checker(char *s, int i, int j)
 }
 /**
  * is_palindrome - check if s is palindrome
- * @c: base number.
+ * @s: base address for string.
  *
  * Return: 1 if n is prime, 0 otherwise.
  */
