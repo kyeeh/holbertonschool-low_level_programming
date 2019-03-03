@@ -1,4 +1,4 @@
-#ifndef HOLBERTON_H_   /* Include guard */
+#ifndef HOLBERTON_H_
 #define HOLBERTON_H_
 
 int _putchar(char c);  /* An example function declaration */
