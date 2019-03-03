@@ -11,11 +11,23 @@
  */
 int main(int argc, char **argv)
 {
-	if (argc != 3)
+	int i = 1;
+	int sum = 0;
+
+	if (argc == 1)
 	{
-		printf("%s\n", "Error");
-		return (1);
+		printf("%i\n", 0);
+		return (0);
 	}
-	printf("%i\n", atoi(argv[1]) * atoi(argv[2]));
+	for (; i < argc; i++)
+	{
+		if (atoi(argv[i]) == 0 && (*argv[i] < 48 || *argv[i] > 57 ))
+		{
+			printf("%s\n", "Error");
+			return (1);
+		}
+		sum += atoi(argv[i]);
+	}
+	printf("%i\n", sum);
 	return (0);
 }

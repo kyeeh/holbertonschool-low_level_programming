@@ -1,3 +1,4 @@
+#include "holberton.h"
 #include <stdio.h>
 /**
  * main - check the code for Holberton School students.
@@ -9,5 +10,5 @@
 int main(int argc, char **argv)
 {
 	printf("%s\n", *argv);
-	return (argc);
+	return (0);
 }
