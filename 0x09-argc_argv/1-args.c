@@ -6,6 +6,6 @@
  */
 int main(int argc, char **argv)
 {
-	printf("%s\n", *argv);
-	return (argc);
+	printf("%i\n", argc - 1);
+	return ((int)*argv);
 }
