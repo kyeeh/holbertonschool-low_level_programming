@@ -1,7 +1,6 @@
-#include "holberton.h"
 #include <stdio.h>
 #include <stdlib.h>
-
+#include <ctype.h>
 /**
  * main - check the code for Holberton School students.
  * @argc: The size of the argv array.
@@ -11,20 +10,17 @@
  */
 int main(int argc, char **argv)
 {
-	int i = 1;
-	int sum = 0;
+	int i, j, sum = 0;
 
-	if (argc == 1)
+	for (i = 1; i < argc; i++)
 	{
-		printf("%i\n", 0);
-		return (0);
-	}
-	for (; i < argc; i++)
-	{
-		if (atoi(argv[i]) == 0 && (*argv[i] < 48 || *argv[i] > 57))
+		for (j = 0; argv[i][j]; j++)
 		{
-			printf("%s\n", "Error");
-			return (1);
+			if (!isdigit(argv[i][j]))
+			{
+				printf("%s\n", "Error");
+				return (1);
+			}
 		}
 		sum += atoi(argv[i]);
 	}
