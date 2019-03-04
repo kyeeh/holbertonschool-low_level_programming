@@ -19,13 +19,11 @@ int main(int argc, char **argv)
 	}
 	amount = atoi(argv[1]);
 	for (i = 0; i < 5; i++)
-	{
 		while (values[i] <= amount)
 		{
-				coins++;
-				amount -= values[i];
+			coins++;
+			amount -= values[i];
 		}
-	}
 	printf("%i\n", coins);
 	return (0);
 }
