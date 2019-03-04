@@ -8,4 +8,6 @@
 
 **Task #03** - Prints multiplication of two numbers.
 
-**Task #04** - Prints sums of two numbers.
+**Task #04** - Prints sums of n numbers.
+
+**Task #05** - Prints the minimum number of coins to make change for an amount of money.
