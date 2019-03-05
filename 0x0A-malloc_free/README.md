@@ -2,7 +2,7 @@
 
 **Task #00** - Creates an array of chars, and initializes it with a specific char.
 
-**Task #01** - returns a pointer to a newly allocated space in memory, which contains a copy of the string given as a parameter.
+**Task #01** - String duplicate.
 
 **Task #02** - Calculates the length of a string.
 
