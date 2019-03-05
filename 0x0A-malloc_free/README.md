@@ -4,7 +4,7 @@
 
 **Task #01** - String duplicate.
 
-**Task #02** - Calculates the length of a string.
+**Task #02** - Concatenates two strings.
 
 **Task #03** - Calculates factorial of n.
 
