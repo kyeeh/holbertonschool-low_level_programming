@@ -9,8 +9,8 @@
  */
 char *_strdup(char *str)
 {
-	unsigned int i = 0, size = 0;
-	
+	unsigned int i, size = 0;
+
 	if (str == NULL)
 		return (NULL);
 	else
@@ -20,7 +20,7 @@ char *_strdup(char *str)
 
 		if (array == NULL)
 			return (NULL);
-		for (; i < size; i++)
+		for (i = 0; i < size; i++)
 			array[i] = str[i];
 	return (array);
 }
