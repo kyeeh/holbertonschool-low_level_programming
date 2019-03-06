@@ -6,7 +6,7 @@
 
 **Task #02** - Concatenates two strings.
 
-**Task #03** - Calculates factorial of n.
+**Task #03** - Returns a pointer to a 2-dimensional array of integers.
 
 **Task #04** - Calculates the Pow of a number.
 
