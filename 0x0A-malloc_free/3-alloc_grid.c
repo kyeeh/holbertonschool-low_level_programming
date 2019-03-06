@@ -11,7 +11,7 @@ int **alloc_grid(int width, int height)
 {
 	int i, j, **matrix = NULL;
 
-	if (width <= 0 || height <= 0 )
+	if (width <= 0 || height <= 0)
 		return (NULL);
 	matrix = malloc(sizeof(height * sizeof(int *)));
 	if (matrix == NULL)
@@ -23,9 +23,7 @@ int **alloc_grid(int width, int height)
 			return (NULL);
 		for (j = 0; j < width; j++)
 		{
-			/*printf("*** ANTES *** I: %i, J: %i, Value: %i\n", i, j, matrix[i][j]);*/
 			matrix[i][j] = 0;
-			/*printf("*** DESPUES *** I: %i, J: %i, Value: %i\n", i, j, matrix[i][j]);*/
 		}
 	}
 	return (matrix);
