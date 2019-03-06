@@ -3,9 +3,9 @@
 #include <stdio.h>
 #include <string.h>
 /**
- * argstostr - concatenates arguments.
+ * strtow - concatenates arguments.
  * @str: String to be splitted.
- 
+ *
  * Return: a pointer to array of String.
  */
 char **strtow(char *str)
@@ -13,7 +13,7 @@ char **strtow(char *str)
 	char *array = NULL;
 	unsigned int i = 0, j = 0, k;
 
-	if (strncmp(str,"",1) || str == NULL)
+	if (strncmp(str, "", 1) || str == NULL)
 		return (NULL);
 	array = malloc((i + j + 1) * sizeof(char));
 	if (array == NULL)
