@@ -8,7 +8,7 @@
 
 **Task #03** - Returns a pointer to a 2-dimensional array of integers.
 
-**Task #04** - Calculates the Pow of a number.
+**Task #04** - Frees a 2 dimensional grid.
 
 **Task #05** - Calculates the square root of a number.
 
