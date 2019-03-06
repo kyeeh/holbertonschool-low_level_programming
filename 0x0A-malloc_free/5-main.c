@@ -4,7 +4,8 @@
 
 /**
  * main - check the code for Holberton School students.
- *
+ * @ac: number of string to be concatenated.
+ * @av: strings to be concatenated.
  * Return: Always 0.
  */
 int main(int ac, char *av[])
