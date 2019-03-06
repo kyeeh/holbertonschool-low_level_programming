@@ -2,10 +2,9 @@
 #include <stdlib.h>
 
 /**
- * alloc_grid - creates a 2 dimensional array of integers.
- * @width: number of columns.
+ * free_grid - Frees a 2 dimensional array of integers.
+ * @grid: dimensional array
  * @height: number of rows.
- * Return: returns a pointer to a 2 dimensional array of integers.
  */
 void free_grid(int **grid, int height)
 {
