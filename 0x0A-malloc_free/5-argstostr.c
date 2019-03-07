@@ -9,12 +9,12 @@
  */
 char *argstostr(int ac, char **av)
 {
-	char *array = NULL;
 	int i, j, k = 0;
+	char *array = NULL, *concat = NULL;
 
 	if (ac == 0 || av == NULL)
 		return (NULL);
-	array = malloc(sizeof(char) * ac);
+	array = malloc(sizeof(char) * ac * 10);
 	if (array == NULL)
 		return (NULL);
 	for (i = 0; i < ac; i++)
@@ -26,7 +26,12 @@ char *argstostr(int ac, char **av)
 		}
 		array[k] = '\n';
 		k++;
+		printf("K: %i, AC: %i\n", k, ac);
 	}
-	/*array[i] = '\0';*/
-	return (array);
+	concat = malloc(sizeof(char) * (++k));
+	concat = array;
+	concat[k] = '\0';
+	array = NULL;
+	free(array);
+	return (concat);
 }
