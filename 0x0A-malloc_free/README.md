@@ -10,7 +10,7 @@
 
 **Task #04** - Frees a 2 dimensional grid.
 
-**Task #05** - Calculates the square root of a number.
+**Task #05** - Concatenates all the arguments of your program.
 
 **Task #06** - Checks if a number is prime.
 

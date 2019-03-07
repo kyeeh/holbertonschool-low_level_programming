@@ -10,21 +10,23 @@
 char *argstostr(int ac, char **av)
 {
 	char *array = NULL;
-	unsigned int i = 0, j = 0, k;
+	int i, j, k = 0;
 
 	if (ac == 0 || av == NULL)
 		return (NULL);
-	array = malloc((i + j + 1) * sizeof(char));
+	array = malloc(sizeof(char) * ac);
 	if (array == NULL)
 		return (NULL);
-	for (k = 0; k < i; k++)
-		array[k] = *av[k];
-	i = k;
-	for (k = 0; k < j; k++)
+	for (i = 0; i < ac; i++)
 	{
-		array[i] = *av[k];
-		i++;
+		for (j = 0; av[i][j] != '\0'; j++)
+		{
+			array[k] = av[i][j];
+			k++;
+		}
+		array[k] = '\n';
+		k++;
 	}
-	array[i] = '\0';
+	/*array[i] = '\0';*/
 	return (array);
 }
