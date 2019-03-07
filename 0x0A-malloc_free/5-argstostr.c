@@ -16,7 +16,7 @@ char *argstostr(int ac, char **av)
 	for (i = 0; i < ac; i++)
 		for (j = 0; av[i][j] != '\0'; j++)
 			k++;
-	concat = malloc(sizeof(char) * (k + 1));
+	concat = malloc(sizeof(char) * (k + ac));
 	if (concat == NULL)
 		return (NULL);
 	for (i = 0, k = 0; i < ac; i++)
