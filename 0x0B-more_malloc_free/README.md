@@ -2,7 +2,7 @@
 
 **Task #00** - Allocates memory using malloc.
 
-**Task #01** - String duplicate.
+**Task #01** - Concatenates two strings.
 
 **Task #02** - Concatenates two strings.
 
