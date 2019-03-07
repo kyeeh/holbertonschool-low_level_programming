@@ -29,11 +29,8 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	for (k = 0; k < i; k++)
 		array[k] = s1[k];
 	i = k;
-	for (k = 0; k < j; k++)
-	{
+	for (k = 0; k < j; k++, i++)
 		array[i] = s2[k];
-		i++;
-	}
 	array[i] = '\0';
 	return (array);
 }
