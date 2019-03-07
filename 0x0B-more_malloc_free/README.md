@@ -4,7 +4,7 @@
 
 **Task #01** - Concatenates two strings.
 
-**Task #02** - Concatenates two strings.
+**Task #02** - Allocates memory for an array.
 
 **Task #03** - Returns a pointer to a 2-dimensional array of integers.
 
