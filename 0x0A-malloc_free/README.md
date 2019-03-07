@@ -12,6 +12,4 @@
 
 **Task #05** - Concatenates all the arguments of your program.
 
-**Task #06** - Checks if a number is prime.
-
-**Task #07** - 
+**Task #06** - Splits a string into words.
