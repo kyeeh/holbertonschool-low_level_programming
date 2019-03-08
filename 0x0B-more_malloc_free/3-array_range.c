@@ -1,9 +1,9 @@
 #include "holberton.h"
 #include <stdlib.h>
 /**
- * _calloc - allocates memory for an array, using malloc.
- * @nmemb: number of elements.
- * @size: element's size.
+ * array_range - creates an array of integers.
+ * @min: starting elements.
+ * @max: ending elements.
  * Return: returns a pointer to an array of elements.
  */
 int *array_range(int min, int max)
