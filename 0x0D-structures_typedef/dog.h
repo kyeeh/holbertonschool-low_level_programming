@@ -4,8 +4,8 @@
 /**
  * struct dog - Dog definition
  * @name: dog name
- * @age: dog's age
- * @owner: dog's owner
+ * @age: dog age
+ * @owner: dog owner
  *
  * Description: Dog Definition
  */
