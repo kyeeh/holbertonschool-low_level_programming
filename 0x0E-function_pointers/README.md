@@ -1,8 +1,8 @@
-#### PREPROCESOR
+#### FUNCTION POINTERS
 
 **Task #00** - Prints a name using function pointers.
 
-**Task #01** - defines a macro named PI as an abbreviation for the token 3.14159265359.
+**Task #01** - Executes a function given as a parameter on each element of an array.
 
 **Task #02** - prints the name of the file it was compiled from.
 
