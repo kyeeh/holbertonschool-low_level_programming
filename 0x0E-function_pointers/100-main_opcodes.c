@@ -2,51 +2,23 @@
 #include "function_pointers.h"
 
 /**
- * print_name_as_is - prints a name as is
- * @name: name of the person
+ * main - prints a name as is
+ * @argc: name of the person
+ * @argv: arguments vector,
  *
  * Return: Nothing.
  */
-void print_name_as_is(char *name)
+int main(int argc, char *argv[])
 {
-	printf("Hello, my name is %s\n", name);
-}
-
-/**
- * print_name_uppercase - print a name in uppercase
- * @name: name of the person
- *
- * Return: Nothing.
- */
-void print_name_uppercase(char *name)
-{
-	unsigned int i;
-
-	printf("Hello, my uppercase name is ");
-	i = 0;
-	while (name[i])
+	if (argc != 2)
 	{
-		if (name[i] >= 'a' && name[i] <= 'z')
-		{
-			putchar(name[i] + 'A' - 'a');
-		}
-		else
-		{
-			putchar(name[i]);
-		}
-		i++;
+		printf("Error\n");
+		exit(1);
 	}
-}
-
-/**
- * main - check the code for Holberton School students.
- *
- * Return: Always 0.
- */
-int main(void)
-{
-	print_name("Danton", print_name_as_is);
-	print_name("Rick Harris", print_name_uppercase);
-	printf("\n");
+	if (atoi(argv[1]) < 0)
+	{
+		printf("Error\n");
+		exit(2);
+	}
 	return (0);
 }
