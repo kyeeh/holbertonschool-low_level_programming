@@ -5,7 +5,7 @@
  * @array: array to iterate.
  * @size: array size.
  * @cmp: comparate function.
- *
+ * Return: returns the index of an element found.
  */
 int int_index(int *array, int size, int (*cmp)(int))
 {
