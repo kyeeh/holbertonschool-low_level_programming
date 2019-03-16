@@ -1,11 +1,9 @@
 #include <stdio.h>
 #include <stdarg.h>
 /**
- * sum_them_all - searches for an integer.
- * @array: array to iterate.
- * @size: array size.
- * @cmp: comparate function.
- * Return: returns the index of an element found.
+ * sum_them_all - sums all arguments.
+ * @n: number of elements.
+ * Return: 0 for n == 0 or sum.
  */
 int sum_them_all(const unsigned int n, ...)
 {
