@@ -7,7 +7,7 @@
  */
 void print_strings(const char *separator, const unsigned int n, ...)
 {
-	char * str;
+	char *str;
 	unsigned int i;
 	va_list a_list;
 
@@ -22,7 +22,7 @@ void print_strings(const char *separator, const unsigned int n, ...)
 				printf("%s", str);
 		else
 			if (separator)
-				printf("(nil)%s", separator);
+				(i < n - 1) ? printf("(nil)%s", separator) : printf("(nil)");
 			else
 				printf("(nil)");
 	}
