@@ -17,14 +17,11 @@ void print_strings(const char *separator, const unsigned int n, ...)
 		str = va_arg(a_list, char *);
 		if (str)
 			if (separator)
-				printf("%s%c ", str, *separator);
+				printf("%s%s ", str, *separator);
 			else
 				printf("%s ", str);
 		else
-			if (separator)
-				printf("(nil)%c ", *separator);
-			else
-				printf("(nil) ");
+			printf("(nil)");
 	}
 	printf("%s\n", va_arg(a_list, char *));
 	va_end(a_list);

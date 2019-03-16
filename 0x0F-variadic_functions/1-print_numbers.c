@@ -14,7 +14,7 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 	for (i = 0; i < n - 1; i++)
 	{
 		if (separator)
-			printf("%i%c ", va_arg(a_list, int), *separator);
+			printf("%i%s ", va_arg(a_list, int), *separator);
 		else
 			printf("%i ", va_arg(a_list, int));
 	}
