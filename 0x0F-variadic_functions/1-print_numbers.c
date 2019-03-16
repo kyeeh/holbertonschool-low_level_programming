@@ -19,5 +19,5 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 			printf("%i ", va_arg(a_list, int));
 	}
 	printf("%i\n", va_arg(a_list, int));
-	va_end (a_list);
+	va_end(a_list);
 }
