@@ -8,4 +8,4 @@
 
 **Task #03** - Prints anything.
 
-**Task #04** - computes the sum value of tow numbers x,y.
+**Task #04** - Program in assembly that prints Hello, Holberton, followed by a new line.
