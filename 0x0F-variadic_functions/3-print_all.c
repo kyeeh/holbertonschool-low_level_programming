@@ -7,7 +7,7 @@
 void print_all(const char * const format, ...)
 {
 	int i = 0;
-	char *str; 
+	char *str;
 	va_list a_list;
 	int *valid_format = NULL;
 
@@ -34,15 +34,17 @@ void print_all(const char * const format, ...)
 				{
 					printf("%s", str);
 					valid_format = &i;
+					break;
 				}
+				printf("(nil)");
 				break;
 			default:
+				valid_format = NULL;
 				break;
 		}
 		if (format[i + 1] != '\0' && valid_format)
 			printf(", ");
 		i++;
-		valid_format = NULL;
 	}
 	printf("\n");
 	va_end(a_list);
