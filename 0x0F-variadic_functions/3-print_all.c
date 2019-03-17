@@ -38,8 +38,9 @@ void print_all(const char * const format, ...)
 				valid_format = 0;
 				break;
 		}
-		if (format[i + 1] != '\0' && valid_format == 1 && i++)
+		if (format[i + 1] != '\0' && valid_format == 1)
 			printf(", ");
+		i++;
 	}
 	printf("\n");
 	va_end(a_list);
