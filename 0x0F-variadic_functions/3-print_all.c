@@ -7,6 +7,7 @@
 void print_all(const char * const format, ...)
 {
 	int i = 0;
+	char *str; 
 	va_list a_list;
 	int *valid_format = NULL;
 
@@ -28,8 +29,12 @@ void print_all(const char * const format, ...)
 				valid_format = &i;
 				break;
 			case 's':
-				printf("%s",va_arg(a_list, char *));
-				valid_format = &i;
+				str = va_arg(a_list, char *);
+				if (str)
+				{
+					printf("%s", str);
+					valid_format = &i;
+				}
 				break;
 			default:
 				break;
