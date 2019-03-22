@@ -2,7 +2,7 @@
 
 **Task #00** - Prints all the elements of a list_t list.
 
-**Task #01** - Prints the number of argument passed.
+**Task #01** - Returns the number of elements in a linked list_t list.
 
 **Task #02** - Prints arguments for a program.
 
