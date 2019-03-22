@@ -4,7 +4,7 @@
 
 **Task #01** - Returns the number of elements in a linked list_t list.
 
-**Task #02** - Prints arguments for a program.
+**Task #02** - Adds a new node at the beginning of a list_t list.
 
 **Task #03** - Prints multiplication of two numbers.
 
