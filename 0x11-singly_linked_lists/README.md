@@ -6,8 +6,6 @@
 
 **Task #02** - Adds a new node at the beginning of a list_t list.
 
-**Task #03** - Prints multiplication of two numbers.
+**Task #03** - Adds a new node at the end of a list_t list.
 
-**Task #04** - Prints sums of n numbers.
-
-**Task #05** - Prints the minimum number of coins to make change for an amount of money.
+**Task #04** - Frees a list_t list.
