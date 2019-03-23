@@ -1,4 +1,3 @@
-#include <stdio.h>
 #include "lists.h"
 /**
  * list_len -  prints and return the number of elements of a list_t list.
