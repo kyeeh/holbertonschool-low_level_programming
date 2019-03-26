@@ -38,7 +38,7 @@ list_t *add_node_end(list_t **head, const char *str)
 	list_t *tail_node, *new_node;
 
 	tail_node = last_node(*head); /* Address of last node */
-	new_node = malloc(sizeof(list_t));	
+	new_node = malloc(sizeof(list_t));
 	if (new_node)
 	{
 		if (tail_node)
