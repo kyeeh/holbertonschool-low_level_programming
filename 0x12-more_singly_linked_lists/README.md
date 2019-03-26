@@ -8,4 +8,6 @@
 
 **Task #03** - Adds a new node at the end of a listint_t list
 
-**Task #04** - Frees a list_t list.
+**Task #04** - Frees a listint_t list.
+
+**Task #05** - Frees a listint_t list.
