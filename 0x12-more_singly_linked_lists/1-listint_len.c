@@ -1,7 +1,8 @@
 #include "lists.h"
 
 /**
- * listint_len_rec - returns the number of elements in a linked listint_t list recursively.
+ * listint_len_rec - returns the number of elements in a linked 
+ * listint_t list recursively.
  * @head: pointer to list.
  * @n: number of nodes acumlated as param.
  * Return: number of nodes.
@@ -19,5 +20,5 @@ size_t print_list_rec(const listint_t *head, unsigned int n)
  */
 size_t listint_len(const listint_t *h)
 {
-	return (print_list_rec(h,0));
+	return (print_list_rec(h, 0));
 }

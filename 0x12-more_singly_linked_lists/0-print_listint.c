@@ -10,7 +10,7 @@ size_t print_list_rec(const listint_t *head, unsigned int n)
 {
 	if (head)
 	{
-		printf("%i\n",head->n);
+		printf("%i\n", head->n);
 		n = print_list_rec(head->next, n + 1);
 	}
 	return (n);
@@ -22,5 +22,5 @@ size_t print_list_rec(const listint_t *head, unsigned int n)
  */
 size_t print_listint(const listint_t *h)
 {
-	return (print_list_rec(h,0));
+	return (print_list_rec(h, 0));
 }
