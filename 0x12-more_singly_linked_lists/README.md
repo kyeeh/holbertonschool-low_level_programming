@@ -10,4 +10,4 @@
 
 **Task #04** - Frees a listint_t list.
 
-**Task #05** - Frees a listint_t list.
+**Task #05** - Frees a listint_t list with double pointer.
