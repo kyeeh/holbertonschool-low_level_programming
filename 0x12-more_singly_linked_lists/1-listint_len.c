@@ -1,7 +1,7 @@
 #include "lists.h"
 
 /**
- * listint_len_rec - returns the number of elements in a linked 
+ * listint_len_rec - returns the number of elements in a linked
  * listint_t list recursively.
  * @head: pointer to list.
  * @n: number of nodes acumlated as param.
