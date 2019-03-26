@@ -3,7 +3,7 @@
  * add_nodeint_end_rec - adds the element at the end  of a
  * listint_t list recursively.
  * @head: double pointer to list.
- * @n: integer to be added into the new node.
+ * @tmp_node: temporal node to add at the end of the list.
  * Return: the address of the new element, or NULL if it failed.
  */
 listint_t *add_nodeint_end_rec(listint_t *head, listint_t *tmp_node)
