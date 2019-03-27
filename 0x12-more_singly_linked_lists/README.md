@@ -14,4 +14,8 @@
 
 **Task #06** - Deletes the head node of a listint_t linked list, and returns the head node’s data.
 
-**Task #06** - Get the nth node of a listint_t linked list.
+**Task #07** - Get the nth node of a listint_t linked list.
+
+**Task #08** - Returns the sum of all the data (n) of a listint_t linked list.
+
+**Task #09** - Inserts a new node at a given position.
