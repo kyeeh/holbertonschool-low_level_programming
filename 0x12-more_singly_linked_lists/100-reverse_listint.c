@@ -19,7 +19,6 @@ listint_t *get_node_rec(listint_t *head, unsigned int index, unsigned int n)
 /**
  * reverse_listint - deletes a new at a given position.
  * @head: double pointer to list.
-
  * Return: head of new list.
  */
 listint_t *reverse_listint(listint_t **head)
