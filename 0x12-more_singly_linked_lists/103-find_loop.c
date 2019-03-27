@@ -1,6 +1,6 @@
 #include "lists.h"
 /**
- * find_listint_loop - prints all the elements of a listint_t list in a save way.
+ * find_listint_loop - prints all the elements of a list in a save way.
  * @head: pointer to list.
  * Return: list.
  */

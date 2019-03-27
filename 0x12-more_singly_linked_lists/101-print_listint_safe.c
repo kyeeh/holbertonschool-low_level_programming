@@ -16,7 +16,7 @@ size_t print_list_rec(const listint_t *head, unsigned int n)
 	return (n);
 }
 /**
- * print_listint_safe - prints all the elements of a listint_t list in a save way.
+ * print_listint_safe - prints all the elements of a list in a save way.
  * @head: pointer to list.
  * Return: number of nodes.
  */

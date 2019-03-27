@@ -20,6 +20,7 @@ int rec_free_listint(listint_t *head, int size)
 size_t free_listint_safe(listint_t **h)
 {
 	int size = 0;
+	
 	if (h && *h)
 	{
 		size = rec_free_listint(*h, size);
