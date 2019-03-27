@@ -1,6 +1,6 @@
 #include "lists.h"
 /**
- * get_node_rec - get the nth node of a listint_t linked list recursively.
+ * get_node_rec - get the nth-1 node of a listint_t linked list recursively.
  * @head: pointer to list.
  * @n: number of nodes acumlated as param.
  * @index: index of node to return.
@@ -20,6 +20,7 @@ listint_t *get_node_rec(listint_t *head, unsigned int index, unsigned int n)
  * insert_nodeint_at_index - inserts a new node at a given position.
  * @head: double pointer to list.
  * @idx: index of inserting position.
+ * @n: data for new node insertion.
  * Return: the address of the new node.
  */
 listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
