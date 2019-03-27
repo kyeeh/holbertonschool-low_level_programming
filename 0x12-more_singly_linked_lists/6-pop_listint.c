@@ -1,17 +1,5 @@
 #include "lists.h"
 /**
- * free_listint - frees a listint_t list.
- * @head: pointer to list.
- */
-void free_listint(listint_t *head)
-{
-	if (head)
-	{
-		free_listint(head->next);
-		free(head);
-	}
-}
-/**
  * pop_listint - deletes the head node of a listint_t linked list, and
  * returns the head node’s data
  * @head: pointer to pointer to list.
@@ -19,12 +7,14 @@ void free_listint(listint_t *head)
 int pop_listint(listint_t **head)
 {
 	int n;
+	listint_t *tmp;
 
 	if (head)
 	{
-		head = (*head)->next;
+		tmp = *head;
 		n = (*head)->n;
-		free(*head);
+		*head = (*head)->next;
+		free(tmp);
 		return (n);
 	}
 	return (0);
