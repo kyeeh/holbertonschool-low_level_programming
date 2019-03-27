@@ -17,10 +17,10 @@ listint_t *get_node_rec(listint_t *head, unsigned int index, unsigned int n)
 	return (head);
 }
 /**
- * delete_nodeint_at_index - deletes a new at a given position.
+ * reverse_listint - deletes a new at a given position.
  * @head: double pointer to list.
- * @index: index of inserting position.
- * Return: 1 or -1 if it's failing.
+
+ * Return: head of new list.
  */
 listint_t *reverse_listint(listint_t **head)
 {
