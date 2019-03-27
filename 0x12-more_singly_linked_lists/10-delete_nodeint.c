@@ -34,16 +34,13 @@ listint_t *get_node_rec(listint_t *head, unsigned int index, unsigned int n)
 			return (head);
 		head = get_node_rec(head->next, index, n + 1);
 	}
-	/*if (!head && n <= index - 1)
-		return (NULL);*/
 	return (head);
 }
 /**
- * insert_nodeint_at_index - inserts a new node at a given position.
+ * delete_nodeint_at_index - deletes a new at a given position.
  * @head: double pointer to list.
  * @index: index of inserting position.
- * @n: data for new node insertion.
- * Return: the address of the new node.
+ * Return: 1 or -1 if it's failing.
  */
 int delete_nodeint_at_index(listint_t **head, unsigned int index)
 {
@@ -55,7 +52,7 @@ int delete_nodeint_at_index(listint_t **head, unsigned int index)
 		if (index == 0)
 		{
 			pop_listint(head);
-			return(1);
+			return (1);
 		}
 		bfr_node = get_node_rec(*head, index, i);
 		if (bfr_node)
