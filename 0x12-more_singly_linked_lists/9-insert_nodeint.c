@@ -10,11 +10,11 @@ listint_t *get_node_rec(listint_t *head, unsigned int index, unsigned int n)
 {
 	if (head && index > 0)
 	{
-		if (n == index - 1)
+		if (head->next && n == index - 1)
 			return (head);
 		head = get_node_rec(head->next, index, n + 1);
 	}
-	if (!head && n < index - 1)
+	if (!head && n <= index - 1)
 		return (NULL);
 	return (head);
 }
