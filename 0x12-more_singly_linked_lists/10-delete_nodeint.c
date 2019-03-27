@@ -1,5 +1,25 @@
 #include "lists.h"
 /**
+ * pop_listint - deletes the head node of a listint_t linked list.
+ * @head: pointer to pointer to list.
+ * Return: returns the head node’s data.
+ */
+int pop_listint(listint_t **head)
+{
+	int n;
+	listint_t *tmp;
+
+	if (head && *head)
+	{
+		tmp = *head;
+		n = (*head)->n;
+		*head = (*head)->next;
+		free(tmp);
+		return (n);
+	}
+	return (0);
+}
+/**
  * get_node_rec - get the nth-1 node of a listint_t linked list recursively.
  * @head: pointer to list.
  * @n: number of nodes acumlated as param.
@@ -10,47 +30,41 @@ listint_t *get_node_rec(listint_t *head, unsigned int index, unsigned int n)
 {
 	if (head && index > 0)
 	{
-		if (head->next && n == index - 1)
+		if (n == index - 1)
 			return (head);
 		head = get_node_rec(head->next, index, n + 1);
 	}
-	if (!head && n <= index - 1)
-		return (NULL);
+	/*if (!head && n <= index - 1)
+		return (NULL);*/
 	return (head);
 }
 /**
  * insert_nodeint_at_index - inserts a new node at a given position.
  * @head: double pointer to list.
- * @idx: index of inserting position.
+ * @index: index of inserting position.
  * @n: data for new node insertion.
  * Return: the address of the new node.
  */
-listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
+int delete_nodeint_at_index(listint_t **head, unsigned int index)
 {
 	int i = 0;
-	listint_t *new_node, *tmp_node;
+	listint_t *tmp_node, *bfr_node;
 
-	new_node = malloc(sizeof(listint_t));
-	if (new_node)
+	if (head && *head)
 	{
-		if (idx == 0 && *head == NULL)
+		if (index == 0)
 		{
-			new_node->n = n;
-			new_node->next = NULL;
-			*head = new_node;
-			return (new_node);
+			pop_listint(head);
+			return(1);
 		}
-		if (*head)
+		bfr_node = get_node_rec(*head, index, i);
+		if (bfr_node)
 		{
-			new_node->n = n;
-			tmp_node = get_node_rec(*head, idx, i);
-			if (tmp_node)
-			{
-				new_node->next = tmp_node->next;
-				tmp_node->next = new_node;
-				return (new_node);
-			}
+			tmp_node = bfr_node->next;
+			bfr_node->next = bfr_node->next->next;
+			free(tmp_node);
+			return (1);
 		}
 	}
-	return (NULL);
+	return (-1);
 }
