@@ -36,7 +36,6 @@ listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 			tmp_node = get_node_rec(*head, idx, i);
 			if (tmp_node)
 			{
-				
 				if (new_node)
 				{
 					new_node->n = n;
