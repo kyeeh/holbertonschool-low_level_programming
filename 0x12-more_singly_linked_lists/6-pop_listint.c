@@ -12,14 +12,20 @@ void free_listint(listint_t *head)
 	}
 }
 /**
- * free_listint2 - frees a listint_t list with double pointer.
+ * pop_listint - deletes the head node of a listint_t linked list, and
+ * returns the head node’s data
  * @head: pointer to pointer to list.
  */
-void free_listint2(listint_t **head)
+int pop_listint(listint_t **head)
 {
+	int n;
+
 	if (head)
 	{
-		free_listint(*head);
-		*head = NULL;
+		head = (*head)->next;
+		n = (*head)->n;
+		free(*head);
+		return (n);
 	}
+	return (0);
 }

@@ -11,3 +11,5 @@
 **Task #04** - Frees a listint_t list.
 
 **Task #05** - Frees a listint_t list with double pointer.
+
+**Task #06** - Deletes the head node of a listint_t linked list, and returns the head node’s data.
