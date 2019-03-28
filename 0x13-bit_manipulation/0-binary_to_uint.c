@@ -1,15 +1,15 @@
 #include "holberton.h"
 /**
- * binary_to_uint_rec - converts a binary number to an unsigned int. recursively.
+ * binary_to_uint_rec - binary to decimal recursively.
  * @b: pointer to string of 0 ir 1.
- * @params: array of auxiliar params for decimal calculation {decimal, chars, index, pow}.
+ * @params: array of auxiliar params for decimal calculation 
  * Return: decimal number.
  */
 unsigned int binary_to_uint_rec(const char *b, unsigned int *params)
 {
 	if (*b != '\0')
-	{
-		if (*b != '0' || *b != '1')
+	{ /* params = {decimal, number_of_chars, current_index, error_flag} */
+		if (*b >= 48 && *b <= 49) /* ONLY BINARIES */
 		{
 			params[1]++;
 			binary_to_uint_rec(b + 1, params);
