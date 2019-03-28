@@ -1,8 +1,9 @@
+#include <math.h>
 #include "holberton.h"
 /**
  * binary_to_uint_rec - binary to decimal recursively.
  * @b: pointer to string of 0 ir 1.
- * @params: array of auxiliar params for decimal calculation 
+ * @params: array of auxiliar params for decimal calculation
  * Return: decimal number.
  */
 unsigned int binary_to_uint_rec(const char *b, unsigned int *params)
