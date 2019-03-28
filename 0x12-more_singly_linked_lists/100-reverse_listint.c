@@ -1,18 +1,17 @@
 #include "lists.h"
 /**
- * get_node_rec - get the nth-1 node of a listint_t linked list recursively.
+ * switch_rec - switch nodes of a listint_t linked list recursively.
  * @head: pointer to list.
- * @n: number of nodes acumlated as param.
- * @index: index of node to return.
  * Return: nth node.
  */
-listint_t *get_node_rec(listint_t *head, unsigned int index, unsigned int n)
+listint_t *switch_rec(listint_t *head, listint_t *current_node, listint_t *tmp_node)
 {
-	if (head && index > 0)
+	if (current_node)
 	{
-		if (n == index - 1)
-			return (head);
-		head = get_node_rec(head->next, index, n + 1);
+		tmp_node = current_node->next;
+		current_node->next = head;
+		head->next = tmp_node;
+		switch_rec(current_node, tmp_node, NULL);
 	}
 	return (head);
 }
@@ -23,18 +22,7 @@ listint_t *get_node_rec(listint_t *head, unsigned int index, unsigned int n)
  */
 listint_t *reverse_listint(listint_t **head)
 {
-	int i = 0, index = 0;
-	listint_t *tmp_node, *bfr_node;
-
 	if (head && *head)
-	{
-		bfr_node = get_node_rec(*head, index, i);
-		if (bfr_node)
-		{
-			tmp_node = bfr_node->next;
-			bfr_node->next = bfr_node->next->next;
-			free(tmp_node);
-		}
-	}
-	return (*head);
+		return (switch_rec(*head, (*head)->next, NULL));
+	return (NULL);
 }

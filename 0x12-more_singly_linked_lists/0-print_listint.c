@@ -1,5 +1,4 @@
 #include "lists.h"
-
 /**
  * print_list_rec - prints all the elements of a listint_t list recursively.
  * @head: pointer to list.
