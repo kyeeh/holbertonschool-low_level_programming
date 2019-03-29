@@ -9,7 +9,7 @@ unsigned int binary_to_uint_rec(const char *b, unsigned int dec)
 {
 	if (*b != '\0')
 	{
-		if (*b >= 48 && *b <= 49) /* ONLY BINARIES */
+		if (*b >= '0' && *b <= '1') /* ONLY BINARIES CHARS*/
 			return (binary_to_uint_rec(b + 1, (dec << 1) | (*b - 48)));
 		else
 			return (0);
