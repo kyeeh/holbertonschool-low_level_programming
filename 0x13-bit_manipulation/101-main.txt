@@ -1,0 +1,5 @@
+/* __libc_start_main(0x400675, 1, 0x7ffd83c5b0e8, 0x4006f0 <unfinished ...>
+fprintf(0x7f3c8d6091c0, "Usage: %s password\n", "./crackme3.dms"Usage: ./crackme3.dms password
+)                         = 31
++++ exited (status 1) +++
+*/
