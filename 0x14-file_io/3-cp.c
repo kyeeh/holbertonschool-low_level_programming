@@ -18,7 +18,7 @@ int main(int argc, char *argv[])
 	}
 	fd_origin  = open(argv[1], O_RDWR | O_CREAT | O_TRUNC, 0600);
 	fd_destiny = open(argv[2], O_TRUNC, 664);
-	if (fd_origin)
+	if (fd_origin && fd_destiny)
 	{
 		buffer = malloc(sizeof(char) * buf_size);
 		if (fd_origin > 0 && buffer)
