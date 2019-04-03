@@ -7,18 +7,18 @@
  */
 ssize_t read_textfile(const char *filename, size_t letters)
 {
+	char *buffer;
 	unsigned int size;
 	int fdesc, error = -1;
-	char buffer[letters];
 
 	if (filename)
 	{
 		fdesc = open(filename, O_RDONLY);
-		if (fdesc > 0)
+		buffer = malloc(sizeof(char) * letters);
+		if (fdesc > 0 && buffer)
 		{
-			size = read(fdesc, &buffer, letters);
-			if (size <= letters)
-				error = write(1, &buffer, size);
+			size = read(fdesc, buffer, letters);
+			error = (size <= letters) ? write(1, buffer, size) : -1;
 			close(fdesc);
 			return ((error >= 0) ? size : 0);
 		}
