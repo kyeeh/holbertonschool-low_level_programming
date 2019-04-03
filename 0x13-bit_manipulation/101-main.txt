@@ -3,3 +3,6 @@ fprintf(0x7f3c8d6091c0, "Usage: %s password\n", "./crackme3.dms"Usage: ./crackme
 )                         = 31
 +++ exited (status 1) +++
 */
+
+https://hybridivy.wordpress.com/2016/05/20/dont-hate-the-hacker-hate-the-code-part-4/
+pay attention to the last script!
