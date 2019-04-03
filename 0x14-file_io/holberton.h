@@ -1,7 +1,7 @@
 #ifndef HOLBERTON_H_
 #define HOLBERTON_H_
 
-#include<fcntl.h> 
+#include<fcntl.h>
 #include<unistd.h>
 #include<stdlib.h>
 
