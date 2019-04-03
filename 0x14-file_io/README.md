@@ -4,7 +4,7 @@
 
 **Task #01** - Creates a file.
 
-**Task #02** - Adds a new node at the beginning of a listint_t list.
+**Task #02** - Appends text at the end of a file.
 
 **Task #03** - Adds a new node at the end of a listint_t list
 
