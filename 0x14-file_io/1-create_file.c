@@ -3,6 +3,7 @@
  * create_file - creates a file.
  * @filename: The file's name.
  * @text_content: The file's content.
+ * Return: 1 on sucess or -1 on failure.
  */
 int create_file(const char *filename, char *text_content)
 {
@@ -17,7 +18,7 @@ int create_file(const char *filename, char *text_content)
 				size++;
 			error = write(fdesc, text_content, size);
 			close(fdesc);
-			return (error > 0) ? 1 : -1;
+			return ((error > 0) ? 1 : -1);
 		}
 	}
 	return (-1);
