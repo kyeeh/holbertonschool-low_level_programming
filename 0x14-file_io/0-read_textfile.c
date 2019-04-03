@@ -17,7 +17,8 @@ ssize_t read_textfile(const char *filename, size_t letters)
 		if (fdesc > 0 && buffer)
 		{
 			size = read(fdesc, buffer, letters);
-			error = (size <= (ssize_t)letters) ? write(1, buffer, size) : -1;
+			if (size >= 0 && (size_t)size <= letters)
+				error = write(STDOUT_FILENO, buffer, size);
 			close(fdesc);
 		}
 	}
