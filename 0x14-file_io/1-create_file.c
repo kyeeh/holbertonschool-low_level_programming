@@ -18,7 +18,7 @@ int create_file(const char *filename, char *text_content)
 				size++;
 			error = write(fdesc, text_content, size);
 			close(fdesc);
-			return ((error > 0) ? 1 : -1);
+			return ((error >= 0) ? 1 : -1);
 		}
 	}
 	return (-1);
