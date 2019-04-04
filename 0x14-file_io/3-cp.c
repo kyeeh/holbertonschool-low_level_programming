@@ -43,7 +43,7 @@ int main(int argc, char *argv[])
 	}
 	else
 		exit(cant_read(argv[1]));
-	return ((error >= 0 && error == size) ? error : 0);
+	return (0);
 }
 
 /**
@@ -80,7 +80,7 @@ int cant_write(char *fdout)
 
 /**
  * cant_close - print error message for closing error.
- * @fdout: File descriptor for closing file.
+ * @fd: File descriptor for closing file.
  * Return: 100 for exit param.
  */
 int cant_close(int fd)
