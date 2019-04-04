@@ -20,9 +20,9 @@ int main(int argc, char *argv[])
 		exit(usage_msg());
 	fd_origin  = open(argv[1], O_RDONLY);
 	fd_destiny = open(argv[2], O_WRONLY | O_CREAT | O_TRUNC, 0664);
-	if (fd_origin < 0)
+	if (fd_origin > 0)
 	{
-		if (fd_destiny)
+		if (fd_destiny > 0)
 		{
 			while (size)
 			{
