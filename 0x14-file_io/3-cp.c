@@ -22,7 +22,7 @@ int main(int argc, char *argv[])
 	fd_destiny = open(argv[2], O_WRONLY | O_CREAT | O_TRUNC, 0664);
 	if (fd_origin < 0)
 	{
-		if (fd_destiny < 0)
+		if (fd_destiny)
 		{
 			while (size)
 			{
