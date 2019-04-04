@@ -46,26 +46,45 @@ int main(int argc, char *argv[])
 	return ((error >= 0 && error == size) ? error : 0);
 }
 
+/**
+ * usage_msg - print error message to describe usage.
+ * Return: 97 for exit param.
+ */
 int usage_msg(void)
 {
 	dprintf(STDERR_FILENO, "Usage: cp file_from file_to\n");
-	return(97);
+	return (97);
 }
 
+/**
+ * cant_read - print error message for reading error.
+ * @fdin: File descriptor for input.
+ * Return: 98 for exit param.
+ */
 int cant_read(char *fdin)
 {
 	dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", fdin);
-	return(98);
+	return (98);
 }
 
+/**
+ * cant_write - print error message for writing error.
+ * @fdout: File descriptor for output.
+ * Return: 99 for exit param.
+ */
 int cant_write(char *fdout)
 {
 	dprintf(STDERR_FILENO, "Error: Can't write to %s\n", fdout);
-	return(99);	
+	return (99);	
 }
 
+/**
+ * cant_close - print error message for closing error.
+ * @fdout: File descriptor for closing file.
+ * Return: 100 for exit param.
+ */
 int cant_close(int fd)
 {
 	dprintf(STDERR_FILENO, "Error: Can't close fd %i\n", fd);
-	return(100);	
+	return (100);
 }
