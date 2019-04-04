@@ -19,9 +19,9 @@ int main(int argc, char *argv[])
 	if (argc != 3)
 		exit(usage_msg());
 	fd_origin  = open(argv[1], O_RDONLY);
-	fd_destiny = open(argv[2], O_WRONLY | O_CREAT | O_TRUNC, 0664);
 	if (fd_origin > 0)
 	{
+		fd_destiny = open(argv[2], O_WRONLY | O_CREAT | O_TRUNC, 0664);
 		if (fd_destiny > 0)
 		{
 			while (size)
@@ -50,7 +50,10 @@ int main(int argc, char *argv[])
 			exit(cant_close(fd_destiny));
 	}
 	else
+	{
+		close(fd_origin);
 		exit(cant_read(argv[1]));
+	}
 	return (0);
 }
 
