@@ -75,7 +75,7 @@ int cant_read(char *fdin)
 int cant_write(char *fdout)
 {
 	dprintf(STDERR_FILENO, "Error: Can't write to %s\n", fdout);
-	return (99);	
+	return (99);
 }
 
 /**
