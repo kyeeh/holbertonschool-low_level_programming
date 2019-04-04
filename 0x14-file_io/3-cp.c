@@ -28,10 +28,18 @@ int main(int argc, char *argv[])
 			{
 				size = read(fd_origin, buffer, buff_size);
 				if (size < 0)
+				{
+					close(fd_origin);
+					close(fd_destiny);
 					exit(cant_read(argv[1]));
+				}
 				error = write(fd_destiny, buffer, size);
 				if (error < 0)
+				{
+					close(fd_origin);
+					close(fd_destiny);
 					exit(cant_write(argv[2]));
+				}
 			}
 		}
 		else
