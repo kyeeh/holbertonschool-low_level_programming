@@ -14,7 +14,7 @@ int cant_close(int);
 int main(int argc, char *argv[])
 {
 	char buffer[1024];
-	int fd_origin, fd_destiny, size = 1, error = -1, buff_size = 1024;
+	int fd_origin, fd_destiny, size = 1024, error = -1, buff_size = 1024;
 
 	if (argc != 3)
 		exit(usage_msg());
@@ -24,7 +24,7 @@ int main(int argc, char *argv[])
 		fd_destiny = open(argv[2], O_WRONLY | O_CREAT | O_TRUNC, 0664);
 		if (fd_destiny > 0)
 		{
-			while (size)
+			while (size == 1024)
 			{
 				size = read(fd_origin, buffer, buff_size);
 				if (size < 0)
