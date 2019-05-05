@@ -12,7 +12,7 @@ size_t print_dlistint_rec(const dlistint_t *h, size_t elements)
 	{
 		printf("%i\n", h->n);
 		elements = print_dlistint_rec(h->next, elements + 1);
-	}		
+	}
 	return (elements);
 }
 
@@ -23,5 +23,5 @@ size_t print_dlistint_rec(const dlistint_t *h, size_t elements)
  */
 size_t print_dlistint(const dlistint_t *h)
 {
-	return(print_dlistint_rec(h, 0));
+	return (print_dlistint_rec(h, 0));
 }
