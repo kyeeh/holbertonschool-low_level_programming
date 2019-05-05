@@ -1,8 +1,21 @@
+# Ignore all
+*
+
+# Unignore all with extensions
+!*.*
+
+# Unignore all dirs
+!*/
+
+0x15-simple_shell/
+.vscode/
+.DS_Store
+*.out
 *.swp
-a.out
+shell
+*.dSYM
 .DS_Store
 *.o
 *.dSYM
-.vscode
 *printf*
 .gitignore
