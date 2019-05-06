@@ -30,8 +30,12 @@ int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
 	{
 		tmp_node = bfr_node->next;
 		if (tmp_node->next)
+		{
 			tmp_node->next->prev = bfr_node;
-		bfr_node->next = tmp_node->next;
+			bfr_node->next = tmp_node->next;
+		}
+		else
+			bfr_node->next = NULL;
 		free(tmp_node);
 		return (1);
 	}
