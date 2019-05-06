@@ -7,12 +7,10 @@
  */
 dlistint_t *add_dnodeint(dlistint_t **head, const int n)
 {
-	dlistint_t *tmp_node; /* Address of head node */
+	dlistint_t *tmp_node = NULL;
 
 	if (head)
-		tmp_node = *head;
-	else
-		return (NULL);
+		tmp_node = *head; /* Address of the header */
 	*head = malloc(sizeof(dlistint_t));
 	if (*head)
 	{
