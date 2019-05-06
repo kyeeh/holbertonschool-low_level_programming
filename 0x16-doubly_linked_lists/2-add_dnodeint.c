@@ -9,8 +9,11 @@
 dlistint_t *add_dnodeint(dlistint_t **head, const int n)
 {
 	dlistint_t *tmp_node; /* Address of head node */
-
-	tmp_node = *head;
+	
+	if (head)
+		tmp_node = *head;
+	else
+		return (NULL);
 	*head = malloc(sizeof(dlistint_t));
 	if (*head)
 	{
