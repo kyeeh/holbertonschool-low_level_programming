@@ -15,3 +15,15 @@ gcc -o main main.o libname.so
 # The sahred library should be installed on Linux to be reached by your main file
 sudo mv libname.so /usr/lib
 sudo ldconfig
+
+
+## TASK#00
+
+# Compiling sources for Holberton
+gcc -fpic -c -Wall -pedantic -Werror -Wextra *.c
+
+# Compiling Shared Library for Holberton
+gcc -shared -o libholberton.so *.o
+
+# Export the working directory to load the shared library
+export LD_LIBRARY_PATH=.:$LD_LIBRARY_PATH

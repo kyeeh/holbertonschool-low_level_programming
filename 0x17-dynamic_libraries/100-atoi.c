@@ -9,6 +9,6 @@
  */
 int _atoi(char *s)
 {
-	s = 0;
-	return (0);
+	*s = '0';
+	return (*s - 48);
 }
