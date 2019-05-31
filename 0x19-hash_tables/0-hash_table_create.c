@@ -26,6 +26,8 @@ hash_table_t *hash_table_create(unsigned long int size)
 				free(new_ht);
 			}
 		}
+		else
+			free(new_ht);
 	}
 	return (new_ht);
 }
