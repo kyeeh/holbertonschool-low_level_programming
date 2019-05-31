@@ -12,7 +12,7 @@ hash_table_t *hash_table_create(unsigned long int size)
 	unsigned int i;
 	hash_table_t *new_ht = NULL;
 
-	if (size)
+	if (size > 0)
 	{
 		new_ht = malloc(sizeof(hash_table_t));
 		if (new_ht)
