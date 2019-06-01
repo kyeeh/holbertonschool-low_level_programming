@@ -12,8 +12,8 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	hash_node_t *new_node;
 	unsigned long int index;
 
-	new_node = calloc(sizeof(hash_node_t), 1);
-	if (ht && key && (key != '\0') && value && new_node)
+	new_node = malloc(sizeof(hash_node_t));
+	if (ht && key && (key != '\0') && (value != NULL) && new_node)
 	{
 		index = key_index((const unsigned char *)key, ht->size);
 		new_node->key = strdup(key);
