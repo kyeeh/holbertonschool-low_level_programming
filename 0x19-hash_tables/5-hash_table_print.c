@@ -20,7 +20,7 @@ void hash_table_print(const hash_table_t *ht)
 				printf("%s'%s': '%s'", sep, tmp_node->key, tmp_node->value);
 				tmp_node = tmp_node->next;
 				sep = ", ";
-			}			
+			}
 		}
 		printf("}\n");
 	}
