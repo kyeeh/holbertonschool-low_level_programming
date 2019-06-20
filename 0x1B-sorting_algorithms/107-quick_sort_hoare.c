@@ -3,12 +3,12 @@
 void swap(int *array, size_t i, size_t j);
 
 /**
- * bitonic_sort - sorts an integer array using the Bitonic sort algorithm
+ * quick_sort_hoare - sorts an integer array using the QSH sort algorithm
  * @array: array to sort
  * @size: array's size
  * Return: Nothing.
  */
-void bitonic_sort(int *array, size_t size)
+void quick_sort_hoare(int *array, size_t size)
 {
 	size_t i, j;
 
